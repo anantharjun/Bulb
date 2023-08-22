@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulbuhh</title>
+
+   <style>
+    img{
+        height: 300px;
+        width: 300px;
+    }
+
+    div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 12%;
+        
+
+    }
+    button{
+        height: 100px;
+        width: 100px;
+        border-radius: 30px;
+    }
+    body{
+        background-color: black;
+    }
+
+
+   </style>
+</head>
+<body id="body">
+
+    <script>
+        function on(){
+
+            document.getElementById("bulb").src = "./on.png";
+            document.getElementById("body").style.background = "white"
+        }
+
+        function off(){
+            document.getElementById("bulb").src = "./off.jpg";
+            document.getElementById("body").style.background = "black"
+
+        }
+
+    </script>
+    
+   <div id = "con">
+    <button onclick="on()">On</button>
+    <img src="./off.jpg" alt="Bulb" id="bulb">
+    <button onclick="off()">Off</button>
+   </div>
+</body>
+</html>
